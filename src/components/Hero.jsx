@@ -1,4 +1,5 @@
 import React from "react";
+import { logoNew } from "/logoNew.png";
 
 export const Hero = () => {
   return (
@@ -14,7 +15,7 @@ export const Hero = () => {
       </div>
       <div className="flex md:w-1/2 justify-center">
         <img
-          src="/logoNew.png"
+          src={logoNew}
           alt="Dikshya"
           className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#c5ae9f]"
         />
