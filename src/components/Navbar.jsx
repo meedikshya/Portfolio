@@ -30,7 +30,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "flex" : "hidden"
-        } md:flex md:flex-row md:items-center absolute md:static left-0 top-[60px] md:top-auto w-full md:w-auto md:ml-auto md:gap-8 justify-center md:bg-transparent p-4 md:p-0 bg-[#333]`}
+        } md:flex md:flex-row md:items-center absolute md:static left-0 top-[60px] md:top-auto w-full md:w-auto md:ml-auto md:gap-8 justify-center md:bg-transparent p-4 md:p-0`}
       >
         <ul className="flex flex-col md:flex-row md:gap-8 gap-4 md:mx-0 mx-5 my-4 md:my-0 items-center text-base text-[#BC9F8B]">
           <li>
