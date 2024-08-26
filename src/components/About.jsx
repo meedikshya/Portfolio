@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Title from "./title";
+import Title from "./Title";
 
 const sliderArrowStyle = `
   .slick-prev::before,
@@ -19,6 +19,8 @@ const sliderArrowStyle = `
 `;
 
 export const About = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -39,12 +41,12 @@ export const About = () => {
         className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-5"
       >
         <Title title="About Me" />
-        <div className="flex flex-col md:flex-row items-center justify-center mt-14  bg-gray-100 p-5">
+        <div className="flex flex-col md:flex-row items-center justify-center mt-14 bg-gray-100 p-5">
           <div className="relative md:w-1/2 flex justify-center md:mb-0">
             <Slider {...sliderSettings} className="w-64 h-30 md:w-80 md:h-96">
               <div className="relative">
                 <img
-                  src="/Dikshya.jpg"
+                  src={`${baseUrl}Dikshya.jpg`}
                   alt="Dikshya"
                   className="object-cover w-full h-full rounded-sm"
                 />
@@ -56,7 +58,7 @@ export const About = () => {
               </div>
               <div className="relative">
                 <img
-                  src="/project.jpg"
+                  src={`${baseUrl}project.jpg`}
                   alt="Project"
                   className="object-cover w-full h-full rounded-sm"
                 />
@@ -95,7 +97,7 @@ export const About = () => {
             >
               <div className="relative">
                 <img
-                  src="/me.jpg"
+                  src={`${baseUrl}me.jpg`}
                   alt="Me"
                   className="object-cover w-full h-full rounded-sm"
                 />
@@ -107,7 +109,7 @@ export const About = () => {
               </div>
               <div className="relative">
                 <img
-                  src="/book.jpg"
+                  src={`${baseUrl}book.jpg`}
                   alt="Book"
                   className="object-cover w-full h-full rounded-sm"
                 />

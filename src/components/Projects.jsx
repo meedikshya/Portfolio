@@ -1,8 +1,9 @@
 import React from "react";
-import Title from "./title";
+import Title from "./Title";
 import { FaGithub } from "react-icons/fa";
 
 export const Projects = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div
       id="projects"
@@ -17,7 +18,7 @@ export const Projects = () => {
         >
           <img
             className="w-full h-56 object-cover"
-            src="/project1.png"
+            src={`${baseUrl}project1.png`}
             alt="Movie Booking System"
           />
           <div className="px-6 py-2 text-center">
@@ -61,7 +62,7 @@ export const Projects = () => {
         >
           <img
             className="w-full h-56 object-cover"
-            src="/project2.png"
+            src={`${baseUrl}project2.png`}
             alt="Single Page Web App"
           />
           <div className="px-6 py-2 text-center">
