@@ -49,6 +49,16 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+            <a href="#qualification" className="hover:text-[#deb89e]">
+              Qualification
+            </a>
+          </li>
+          <li>
+            <a href="#skill" className="hover:text-[#deb89e]">
+              Skill
+            </a>
+          </li>
+          <li>
             <a href="#contact" className="hover:text-[#deb89e]">
               Contact
             </a>

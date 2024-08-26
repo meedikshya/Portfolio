@@ -13,7 +13,7 @@ const Qualification = () => {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-10" id="qualification">
       <section className="p-4 md:p-6 max-w-screen-lg mx-auto mt-7" id="3">
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2">
           Qualification
