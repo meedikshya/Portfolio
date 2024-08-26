@@ -26,6 +26,8 @@ export const About = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
     customPaging: (i) => <div className="w-2 h-2 bg-[#ffffff] rounded-full" />,
   };
 
@@ -87,7 +89,10 @@ export const About = () => {
             </p>
           </div>
           <div className="relative md:w-1/2 flex justify-center md:mb-0">
-            <Slider {...sliderSettings} className="w-64 h-30 md:w-80 md:h-96">
+            <Slider
+              {...sliderSettings}
+              className="w-64 h-30 md:w-80 md:h-96 mb-20"
+            >
               <div className="relative">
                 <img
                   src="/me.jpg"
